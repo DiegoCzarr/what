@@ -1,0 +1,157 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alternar Divs</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                flex-direction: column;
+                background-color: #f0f0f0;
+            }
+            .div-container {
+                width: 100%;
+                height: 300px;
+                position: relative;
+            }
+            .divs {
+                opacity: 0; /* Começa invisível */
+                transition: opacity 0.5s ease; /* Transição suave de opacidade */
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .divs.active {
+                opacity: 1; /* Torna visível a div ativa */
+            }
+
+            .controls {
+                margin-top: 20px;
+            }
+            input {
+                margin-top: 20px;
+                padding: 10px;
+                font-size: 16px;
+                width: 300px;
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: 500;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div class="div-container">
+            <!-- Divs que serão alternadas -->
+            <div class="divs active" id="div1" style="display: flex; align-items: center;">
+                <h1 style="margin-right: 50px;">01.</h1>
+                <a href="./images/light.png" target="_blank">
+                    <img src="./images/light.png" alt="Imagem 1" style="width: 300px; height: 300px; object-fit: cover;">
+                </a>
+                <h3 style="margin-right: 50px; margin-left: 50px;">https://linkenc.net/53OeGkV8V35HDcXtPSGUZF0s~WRUOI-VtIE7oGqAmrsU~B5M7QB5i6gEkQGlY0hV6UrZAkYW5~cttVtVL-wYTZmyHeAfMOUmX1mO.xG9Ew!</h3>
+                <h3>saisons</h3>
+            </div>
+            <div class="divs" id="div2" style="display: flex; align-items: center;">
+                <h1>02.</h1>
+                <img src="./images/2025.png" alt="Imagem 2" style="width: 600px; height: 300px; object-fit: cover; margin-left: 100px;">
+                <img src="./images/niver.jpg" style="width: 500px; height: 300px; object-fit: cover; margin: 20px;">
+            </div>
+            <div class="divs" id="div3" style="display: flex; align-items: center;">
+                <h1 style="margin-left: 400px;">03.</h1>
+                <h3 style="margin-left: 100px;">-5.073687054427803, -42.77918510709975</h3>
+                <img src="./images/date.gif" style="width: 200px; height: 200px; object-fit: cover; margin-left: 100px;">
+            </div>
+            <div class="divs" id="div4" style="display: flex; align-items: center;">
+                <h1>04.</h1>
+                <span>https://genyo.com.br/quinto-dia-util-no-sabado/#:~:text=O%20pagamento%20de%20sal%C3%A1rios%20dentro,satisfa%C3%A7%C3%A3o%20de%20suas%20necessidades%20b%C3%A1sicas.</span>
+                <img src="./images/ss.png" style="width: 200px; height: 200px; object-fit: cover; margin-left: 50px;">
+                <img src="./images/s.jpg" style="width: 200px; height: 200px; object-fit: cover; margin-left: 50px;">
+            </div>
+            <div class="divs" id="div5" style="display: flex; align-items: center;">
+                <h1>05.</h1>
+                <a href="https://en.wikipedia.org/wiki/Ronnie_Coleman" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">???</a>
+                <a href="https://pt.wikipedia.org/wiki/Pel%C3%A9" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">???</a>
+                <a href="https://pt.wikipedia.org/wiki/Usain_Bolt" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">???</a>
+                <a href="https://en.wikipedia.org/wiki/Lewis_Hamilton" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">???</a>
+                <img src="./images/1.jpg" style="width: 400px; height: 400px; object-fit: cover; margin-left: 100px; margin-bottom: 60px;">
+            
+            </div>
+            <div class="divs" id="div6" style="display: flex; align-items: center;">
+                <h1>06.</h1>
+                <img src="./images/namo.jpg" style="width: 400px; height: 400px; object-fit: cover; margin-left: 100px;">
+                <a href="https://pt.wikipedia.org/wiki/Spider-Man:_Homecoming" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">?</a>
+                <a href="https://pt.wikipedia.org/wiki/Beauty_and_the_Beast_(filme_de_2017)" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">?</a>
+                <a href="https://pt.wikipedia.org/wiki/The_Fate_of_the_Furious" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">?</a>
+                <a href="https://pt.wikipedia.org/wiki/Star_Wars:_The_Last_Jedi" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">?</a>
+                <a href="https://pt.wikipedia.org/wiki/Thor:_Ragnarok" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">?</a>
+                <img src="./images/idade.webp" style="width: 700px; height: 350px; object-fit: cover; margin-left: 100px; margin-bottom: 50px;"> 
+            </div>
+            <div class="divs" id="div7" style="display: flex; align-items: center;">
+                <h1>07.</h1>
+                <a href="https://www.youtube.com/watch?v=Pb-K2tXWK4w" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">???</a>
+                <img src="./images/p.webp" style="width: 900px; height: 350px; object-fit: cover; margin-bottom: 30px;">
+                <a href="https://pt.wikipedia.org/wiki/Proclama%C3%A7%C3%A3o_da_Rep%C3%BAblica_do_Brasil#:~:text=A%20Proclama%C3%A7%C3%A3o%20da%20Rep%C3%BAblica%20Brasileira,Brasil%2C%20encerrando%20a%20monarquia%20constitucional" style="position: relative; z-index: 10; margin-left: 50px; font-weight: 700;">???</a>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prevButton">Anterior</button>
+            <button id="nextButton">Próximo</button>
+        </div>
+
+        <input type="text" id="inputField" placeholder="Digite o código">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const divs = document.querySelectorAll('.divs');
+                let currentDivIndex = 0;
+        
+                const prevButton = document.getElementById("prevButton");
+                const nextButton = document.getElementById("nextButton");
+        
+                function showDiv(index) {
+                    divs.forEach((div, i) => {
+                        div.classList.remove('active');
+                        div.style.display = 'none'; // Esconde todas as divs
+                        if (i === index) {
+                            div.classList.add('active');
+                            div.style.display = 'flex'; // Mostra apenas a div ativa
+                        }
+                    });
+                }
+        
+                prevButton.addEventListener("click", () => {
+                    if (currentDivIndex > 0) {
+                        currentDivIndex--;
+                    } else {
+                        currentDivIndex = divs.length - 1;
+                    }
+                    showDiv(currentDivIndex);
+                });
+        
+                nextButton.addEventListener("click", () => {
+                    if (currentDivIndex < divs.length - 1) {
+                        currentDivIndex++;
+                    } else {
+                        currentDivIndex = 0;
+                    }
+                    showDiv(currentDivIndex);
+                });
+        
+                // Mostra a primeira div ao carregar
+                showDiv(currentDivIndex);
+            });
+        </script>
+        
+
+    </body>
+    </html>
